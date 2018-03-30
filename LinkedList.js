@@ -9,7 +9,7 @@ class Node {
   }
 }
 
-class LinkedList {
+export class LinkedList {
   constructor(headEle){
     this.head = new Node(headEle);
     this.length = length;
