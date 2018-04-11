@@ -29,19 +29,23 @@ var tree = {
  * 深度优先遍历
  */
 
-const deepTranversal = (rootNode) => {
+const deepTranversal = rootNode => {
+
   const stack = [];
   stack.push(rootNode);
+
   while(stack.length !== 0){
+
     let node = stack.pop();
     console.log(node);
-
     if(node.left){
+
       stack.push(node.left);
     }
 
     if(node.right){
+
       stack.push(node.right);
     }
   }
-};
+}
