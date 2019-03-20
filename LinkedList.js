@@ -15,8 +15,7 @@ export class LinkedList {
     this.length = length;
   }
 
-  // 出入一个节点
-
+  // 插入一个节点
   append(element){
     const node = new Node(element);
     if(this.head === null){
